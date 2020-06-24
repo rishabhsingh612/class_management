@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/gradient_4"
+    >
+
+
+    <ImageView
+        android:id="@+id/teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/teacher"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="217dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="Enter User Id"
+        android:inputType="textEmailAddress"
+        android:textColor="#0E0000"
+        android:textColorHint="#0B0101"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:layout_below="@id/teacher"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#0B0101"
+        android:textColorHint="#070000"
+        android:layout_below="@+id/email"
+        />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/help"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_round"
+        android:hint="Login"
+        android:textColor="#070707"
+        android:textColorHint="#0B0A0A" />
+
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="48dp"
+        android:background="#BDB3B3"
+        android:clickable="true"
+        android:text="Forgot Password ?"
+        android:textColor="#100C0C"
+        android:textColorHint="#0C0A0A"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
